@@ -3,7 +3,7 @@ name: Update WinGet Packages
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 3 * * *' # Scheduled to run daily at 03:00
+    - cron:  '0 0 * * sun' # Scheduled to run at 00:00 every sunday
 
 jobs:
   update:
